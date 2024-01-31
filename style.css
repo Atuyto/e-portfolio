@@ -1,0 +1,72 @@
+
+
+@font-face {
+    font-face-name: "imprima";
+    src: local("ressources/imprima-Regular.ttf") ;
+}
+
+
+body{
+    margin: 0;
+}
+
+
+#headerBlock {
+    background-color: red;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-items: center;
+}
+
+#headerBlock a {
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "imprima", sans-serif;
+}
+#link{
+    background-color: chartreuse;
+    justify-content: space-between;
+
+}
+
+
+/*
+@media screen and (max-width: 1024px){
+    #headerBlock {
+        background-color: red;
+        overflow: hidden;
+        padding: 20px 10px;
+    }
+
+    #headerBlock a {
+        font-size: 16px;
+    }
+
+    #logoLink, #link {
+        background-color: chartreuse;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+
+    #logoLink{
+        float: left;
+        margin-left: 10em;
+    }
+
+
+    #link{
+        float: right;
+        margin-right: 10em;
+    }
+}*/
+
+
+
+
+
