@@ -1,72 +1,319 @@
 
 
 @font-face {
-    font-face-name: "imprima";
-    src: local("ressources/imprima-Regular.ttf") ;
+    font-family: "imprima";
+    src: local("ressources/LuckiestGuy-Regular.ttf") ;
 }
 
+:root {
+    --main-bg-color: #353535;
+}
 
 body{
     margin: 0;
 }
-
-
-#headerBlock {
-    background-color: red;
-    display: flex;
-    width: 100%;
-    height: 100px;
-    justify-items: center;
-}
-
-#headerBlock a {
+.menu-toggle {
+    display: none;
+    cursor: pointer;
     color: white;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 22px;
     font-family: "imprima", sans-serif;
 }
-#link{
-    background-color: chartreuse;
+
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: var(--main-bg-color);
+}
+
+nav .navbar{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    height: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+
+nav .navbar .logo a, .footer #footerBloc .menu li{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: "imprima", sans-serif;
+}
+
+nav .navbar .menu, .footer #footerBloc .menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
 
 }
 
+.navbar .menu li{
+    list-style: none;
+    margin: 0 10px;
 
-/*
-@media screen and (max-width: 1024px){
-    #headerBlock {
-        background-color: red;
-        overflow: hidden;
-        padding: 20px 10px;
+}
+.navbar .menu li a, .footer #footerBloc .menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "imprima", sans-serif;
+}
+
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main .presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    width: 50%;
+    min-width: 50%;
+
+}
+
+.main .presentation h1{
+    text-align: center;
+    font-family: "Luckiest Guy", serif ;
+    margin-top: 180px;
+    font-size: 128px;
+    color: var(--main-bg-color);
+}
+
+.main .presentation p{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "imprima", sans-serif ;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+}
+.main .imagePresentation img{
+    width: 100%;
+}
+
+
+
+.contact {
+    display: flex;
+    width: 100%;
+    height: 550px;
+    background: url("ressources/footer.svg") no-repeat;
+}
+
+.contact h1{
+    width: 50%;
+    font-family: "Luckiest Guy", serif;
+    margin-top: 175px;
+    font-size: 50px;
+    margin-left: 50px;
+    text-align: center ;
+    color: white;
+}
+
+.contact .contactBlock{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.contact .contactBlock #contactHeader{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.contact .contactBlock #contactHeader #name{
+    display: block;
+    float: left;
+    margin-left: 50px;
+    margin-right: auto;
+    width: 35%;
+    height: 30px;
+    padding-left: 15px;
+    font-family: "imprima", sans-serif;
+}
+
+.contact .contactBlock #contactHeader #email{
+    display: block;
+    float: right;
+    margin-right: 50px;
+    margin-left: auto;
+    width: 35%;
+    height: 30px;
+    padding-left: 15px;
+    font-family: "imprima", sans-serif;
+}
+
+.contact .contactBlock textarea{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    height: 200px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: "imprima", sans-serif;
+}
+
+
+.contact .contactBlock #btenvoyer{
+    display: block;
+    float: left;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: auto;
+    width: 100px;
+    height: 30px;
+    background-color: #F9984E;
+    border: none;
+    color: white;
+    font-family: "imprima", sans-serif;
+    box-shadow: 2px 1px 6px black;
+}
+
+
+.footer{
+    display: flex;
+    margin-top: -150px;
+    width: 100%;
+    height: 230px;
+    background: url("ressources/Rectangle 7.svg") no-repeat;
+}
+
+.footer #footerBloc {
+    max-width: 90%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    height: fit-content;
+}
+
+
+
+
+
+
+
+/* ###################################################Version Tablette################################## */
+
+@media screen and (max-width: 1200px) {
+
+    nav .navbar .logo a, nav .navbar .menu li a {
+        font-size: 14px;
+    }
+    .main .presentation h1{
+        font-size: 69px;
     }
 
-    #headerBlock a {
+    nav .navbar .menu li {
+        padding: 8px;
+    }
+
+    .main .presentation h1{
+        margin-top: 50px;
+        font-size: 48px;
+    }
+    .main .presentation p{
+        font-size: 18px;
+    }
+    .main .presentation{
+        gap: 2rem;
+        width: 100%;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .contact h1{
+        font-size: 32px;
+    }
+    .footer #footerBloc .menu li a{
+        font-size: 12px;
+    }
+
+}
+
+/* ###################################################Version Téléphone################################## */
+
+@media screen and (max-width: 900px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav .navbar .menu {
+        display: none;
+    }
+
+    nav .navbar .menu.show {
+        display: flex;
+        position: fixed;
+        background-color: var(--main-bg-color);
+        top: 50px;
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        padding: 0;
+    }
+
+    .main .presentation h1{
+        font-size: 32px;
+    }
+    .main .presentation p{
         font-size: 16px;
     }
 
-    #logoLink, #link {
-        background-color: chartreuse;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        width: fit-content;
+    .contact h1{
+        font-size: 22px;
     }
 
-    #logoLink{
+    .contact .contactBlock #contactHeader{
+        flex-direction: column;
+
+    }
+    .contact .contactBlock textarea{
+        height: 150px;
+
+    }
+    .contact .contactBlock #contactHeader #email{
         float: left;
-        margin-left: 10em;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: auto;
+    }
+    .contact .contactBlock #contactHeader #name{
+        float: left;
+        margin-right: 50px;
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    .footer #footerBloc .menu li a{
+        font-size: 10px;
+        margin: 0;
+    }
+    .footer #footerBloc .menu{
+        gap: 1em;
     }
 
 
-    #link{
-        float: right;
-        margin-right: 10em;
-    }
-}*/
 
 
 
+}
 
 
