@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: "imprima";
+    src: local("ressources/LuckiestGuy-Regular.ttf") ;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.projet-left, .projet-right{
+    display: flex;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projet-left .image img, .projet-right .image img{
+    max-width: 500px;
+    box-shadow: 0px 4px 28px 7px #b6b6b6;
+}
+
+.projet-left .container-text{
+    margin-left: 60px;
+    width: 100%;
+}
+
+.projet-right .container-text{
+    margin-right: 60px;
+    width: 100%;
+}
+
+.projet-left .container-text .type,.projet-right .container-text .type{
+    font-size: 12px;
+    color: #808CF9;
+    font-family: "imprima", sans-serif;
+}
+
+.projet-left .container-text h1, .projet-right .container-text h1{
+    font-size: 32px;
+    color: #353535;
+    font-family: "imprima", sans-serif;
+}
+.projet-left .container-text .description, .projet-right .container-text .description{
+    font-size: 20px;
+    color: #454545;
+    font-family: "imprima", sans-serif;
+}
+

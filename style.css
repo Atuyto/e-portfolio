@@ -57,10 +57,14 @@ nav .navbar .menu, .footer #footerBloc .menu{
 
 }
 .navbar .menu li a, .footer #footerBloc .menu li a{
-    color: white;
+    color: lightgrey;
     font-size: 20px;
     text-decoration: none;
     font-family: "imprima", sans-serif;
+}
+
+.navbar .menu .nav-item.active a{
+    color: white;
 }
 
 
@@ -204,6 +208,17 @@ nav .navbar .menu, .footer #footerBloc .menu{
 }
 
 
+@keyframes myAnim {
+    0% {
+        transform: scaleY(0);
+        transform-origin: 100% 0%;
+    }
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+    }
+}
 
 
 
@@ -222,6 +237,9 @@ nav .navbar .menu, .footer #footerBloc .menu{
 
     nav .navbar .menu li {
         padding: 8px;
+    }
+    nav .navbar .menu  {
+        gap: 1rem;
     }
 
     .main .presentation h1{
@@ -268,6 +286,11 @@ nav .navbar .menu, .footer #footerBloc .menu{
         width: 100%;
         z-index: 1;
         padding: 0;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+
+    nav .navbar .menu.hide {
+        animation: myAnim 2s ease 0s 1 reverse forwards;
     }
 
     .main .presentation h1{
