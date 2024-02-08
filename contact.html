@@ -35,22 +35,23 @@
         <div class="container-title">
             <p>N’hésitez pas à m’envoyer un mail </p>
         </div>
+            <form action="https://formspree.io/f/xzbnewpj" method="POST">
+                <div class="container-mail">
+                    <div class="container-head">
+                        <label id="name">
+                            <input placeholder="NOM">
+                        </label>
+                        <label id="email">
+                            <input type="email" name="email" placeholder="EMAIL">
+                        </label>
+                    </div>
+                    <label id="message">
+                        <textarea name="message" placeholder="MESSAGE"></textarea>
+                    </label>
 
-            <div class="container-mail">
-                <div class="container-head">
-                    <label id="name">
-                        <input placeholder="NOM">
-                    </label>
-                    <label id="email">
-                        <input placeholder="PRENOM">
-                    </label>
+                    <button type="submit">Envoyer</button>
                 </div>
-                <label id="message">
-                    <textarea placeholder="MESSAGE"></textarea>
-                </label>
-
-                <button type="submit">Envoyer</button>
-            </div>
+            </form>
     </div>
 
     <div class="footer">

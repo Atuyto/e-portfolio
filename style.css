@@ -123,64 +123,57 @@ nav .navbar .menu{
     color: white;
 }
 
-.contact .contactBlock{
+
+
+.contact form{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     width: 50%;
-}
-
-.contact .contactBlock #contactHeader{
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 100px;
+}
+
+.contactBlock{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    gap: 2em;
+
 }
 
-.contact .contactBlock #contactHeader #name{
-    display: block;
-    float: left;
-    margin-left: 50px;
-    margin-right: auto;
-    width: 35%;
+
+.contactBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contactHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-right: 1em;
+}
+
+.contactHeader input {
+    flex: 1;
     height: 30px;
-    padding-left: 15px;
-    font-family: "imprima", sans-serif;
 }
 
-.contact .contactBlock #contactHeader #email{
-    display: block;
-    float: right;
-    margin-right: 50px;
-    margin-left: auto;
-    width: 35%;
-    height: 30px;
-    padding-left: 15px;
-    font-family: "imprima", sans-serif;
-}
-
-.contact .contactBlock textarea{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 25px;
+.contactBlock textarea{
+    margin-left: 1em;
+    margin-right: 1em;
     height: 200px;
-    padding-left: 15px;
-    padding-top: 10px;
-    font-family: "imprima", sans-serif;
 }
 
 
-.contact .contactBlock #btenvoyer{
-    display: block;
+
+
+.contactBlock button{
+    width: 150px;
     float: left;
-    margin-top: 15px;
     border-radius: 10px;
-    margin-left: 50px;
+    margin-left: 1em;
     margin-right: auto;
-    width: 100px;
     height: 30px;
     background-color: #F9984E;
     border: none;
@@ -188,6 +181,12 @@ nav .navbar .menu{
     font-family: "imprima", sans-serif;
     box-shadow: 2px 1px 6px black;
 }
+
+
+
+
+
+
 
 
 .footer{
@@ -330,28 +329,29 @@ nav .navbar .menu{
 
     .contact h1{
         font-size: 22px;
+        margin-left: 0;
     }
 
-    .contact .contactBlock #contactHeader{
+    .contact .contactBlock .contactHeader{
         flex-direction: column;
+        margin: 0;
+        gap: 1em;
+
+    }
+
+    .contactHeader input{
+        margin-left: 0;
+        margin-right: 1em;
+
 
     }
     .contact .contactBlock textarea{
         height: 150px;
+        margin-left: 0;
+        margin-right: 1em;
+    }
 
-    }
-    .contact .contactBlock #contactHeader #email{
-        float: left;
-        margin-left: 50px;
-        margin-right: 50px;
-        width: auto;
-    }
-    .contact .contactBlock #contactHeader #name{
-        float: left;
-        margin-right: 50px;
-        margin-bottom: 10px;
-        width: auto;
-    }
+
 
     .footer #footerBloc .menu li a{
         font-size: 10px;
