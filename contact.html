@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hannecart-Alexandre</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+    <script src="Controler.js"></script>
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="index.html">Hannecart Alexandre</a></div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+        <ul class="menu">
+          <li class="nav-item ">
+            <a href ="index.html" >ACCUEIL</a>
+          </li>
+          <li class="nav-item">
+            <a href="projet.html">PROJETS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">PARCOURS</a>
+          </li>
+          <li class="nav-item active">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main">
+        <div class="container-title">
+            <p>N’hésitez pas à m’envoyer un mail </p>
+        </div>
+
+            <div class="container-mail">
+                <div class="container-head">
+                    <label id="name">
+                        <input placeholder="NOM">
+                    </label>
+                    <label id="email">
+                        <input placeholder="PRENOM">
+                    </label>
+                </div>
+                <label id="message">
+                    <textarea placeholder="MESSAGE"></textarea>
+                </label>
+
+                <button type="submit">Envoyer</button>
+            </div>
+    </div>
+
+    <div class="footer">
+        <div id="footerBloc">
+            <ul class="menu">
+                <li class="nav-item">
+                    <a href ="#" id="current">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">PROJETS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">PARCOURS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">CONTACT</a>
+                </li>
+                <li class="nav-item-img">
+                    <a href="#"><img src="ressources/linkdin.svg" alt="logo linkdin"></a>
+                </li>
+                <div class="footer-icon">
+                    <li class="nav-item-img">
+                        <a href="https://github.com/Atuyto"><img src="ressources/github.svg" alt="logo github"></a>
+                    </li>
+                </div>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

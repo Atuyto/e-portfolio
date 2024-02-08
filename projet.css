@@ -43,9 +43,57 @@
     color: #353535;
     font-family: "imprima", sans-serif;
 }
+
 .projet-left .container-text .description, .projet-right .container-text .description{
     font-size: 20px;
     color: #454545;
     font-family: "imprima", sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .projet-left{
+        flex-direction: column;
+    }
+
+    .projet-left .container-text{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .projet-right{
+        flex-direction: column-reverse;
+    }
+
+
+    .projet-left .image img, .projet-right .image img{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .projet-left .container-text h1, .projet-right .container-text h1{
+        font-size: 22px;
+    }
+
+    .projet-left .container-text .description, .projet-right .container-text .description{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+
+    .projet-left .image img, .projet-right .image img{
+        max-width: 300px;
+    }
+
+    .projet-left .container-text h1, .projet-right .container-text h1{
+        font-size: 16px;
+    }
+
+    .projet-left .container-text .description, .projet-right .container-text .description{
+        font-size: 12px;
+    }
+
 }
 

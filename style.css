@@ -35,7 +35,7 @@ nav .navbar{
     margin: auto;
 }
 
-nav .navbar .logo a, .footer #footerBloc .menu li{
+nav .navbar .logo a{
     display: flex;
     color: white;
     font-size: 20px;
@@ -44,7 +44,7 @@ nav .navbar .logo a, .footer #footerBloc .menu li{
     font-family: "imprima", sans-serif;
 }
 
-nav .navbar .menu, .footer #footerBloc .menu{
+nav .navbar .menu{
     display: flex;
     justify-content: space-between;
     gap: 5rem;
@@ -56,7 +56,7 @@ nav .navbar .menu, .footer #footerBloc .menu{
     margin: 0 10px;
 
 }
-.navbar .menu li a, .footer #footerBloc .menu li a{
+.navbar .menu li a{
     color: lightgrey;
     font-size: 20px;
     text-decoration: none;
@@ -199,14 +199,20 @@ nav .navbar .menu, .footer #footerBloc .menu{
 }
 
 .footer #footerBloc {
-    max-width: 90%;
+    max-width: 80%;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
     height: fit-content;
 }
 
+.footer #footerBloc .menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5rem;
+    margin: 130px auto 0;
+}
 
 @keyframes myAnim {
     0% {
@@ -220,6 +226,19 @@ nav .navbar .menu, .footer #footerBloc .menu{
     }
 }
 
+.footer #footerBloc .menu li {
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style: none;
+}
+
+.footer #footerBloc .menu li a {
+    text-decoration: none;
+    text-align: center;
+    font-family: "imprima", sans-serif;
+    font-size: 18px;
+    color: white;
+}
 
 
 
@@ -241,6 +260,9 @@ nav .navbar .menu, .footer #footerBloc .menu{
     nav .navbar .menu  {
         gap: 1rem;
     }
+    nav .navbar .menu{
+        gap: normal;
+    }
 
     .main .presentation h1{
         margin-top: 50px;
@@ -261,6 +283,12 @@ nav .navbar .menu, .footer #footerBloc .menu{
     }
     .footer #footerBloc .menu li a{
         font-size: 12px;
+    }
+    .footer #footerBloc .menu .nav-item-img{
+        gap: 2rem;
+    }
+    .footer #footerBloc .menu .nav-item-img img{
+        width: 50%;
     }
 
 }
@@ -330,8 +358,19 @@ nav .navbar .menu, .footer #footerBloc .menu{
         margin: 0;
     }
     .footer #footerBloc .menu{
+        margin-top: 150px;
         gap: 1em;
     }
+    .footer #footerBloc .menu .footer-icon{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact .contactBlock #btenvoyer{
+        width: 100px;
+    }
+
 
 
 
