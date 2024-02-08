@@ -56,14 +56,7 @@
 
 }
 
-.appetence{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    background-color: #454545;
-    width: 100%;
-    height: 300px;
-}
+
 
 .appetence h1{
     font-family: "Luckiest Guy", serif;
@@ -83,3 +76,47 @@
     font-size: 42px;
     color: #454545;
 }
+.appetence{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #454545;
+    width: 100%;
+    height: 700px;
+}
+
+.appetence .container-appetence{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.appetence .container-appetence .container-appetence.competence img{
+    max-width: 120px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.appetence .container-appetence .container-appetence.competence h1 {
+    font-family: "Luckiest Guy", serif;
+    font-size: 32px;
+    color: white;
+}
+.appetence .container-appetence .container-appetence.competence p {
+    font-family: "imprima", sans-serif;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+.appetence .container-appetence .container-appetence.competence {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: fit-content;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: auto;
+
+}
+

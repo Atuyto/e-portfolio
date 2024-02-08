@@ -77,18 +77,18 @@ nav .navbar .menu{
 .main .presentation{
     display: flex;
     flex-direction: column;
-    gap: 10rem;
     width: 50%;
     min-width: 50%;
+    margin: auto;
 
 }
 
 .main .presentation h1{
     text-align: center;
     font-family: "Luckiest Guy", serif ;
-    margin-top: 180px;
     font-size: 128px;
     color: var(--main-bg-color);
+    margin: 0;
 }
 
 .main .presentation p{

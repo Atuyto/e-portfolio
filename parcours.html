@@ -26,7 +26,7 @@
                 <a href="parcours.html">QUI SUIS-JE ?</a>
             </li>
             <li class="nav-item">
-                <a href="#">CONTACT</a>
+                <a href="contact.html">CONTACT</a>
             </li>
         </ul>
     </div>
@@ -74,10 +74,24 @@
     <div class="appetence">
         <h1>Mes soft skills</h1>
 
-        <div id="container">
+        <div class="container-appetence">
 
-            <div>
+            <div class="container-appetence competence">
+                <img  src="ressources/perseverant.svg">
+                <h1>persévérant</h1>
+                <p>Ma persévérance m’a permis de surmonter des obstacles et d’atteindre mes buts, même lorsque les choses étaient difficiles.</p>
+            </div>
 
+            <div class="container-appetence competence">
+                <img  src="ressources/altruiste.svg">
+                <h1>Altruiste</h1>
+                <p>Mon sens de l’altruisme se manifeste par ma volonté de soutenir mes collègues et de partager mes connaissances.</p>
+            </div>
+
+            <div class="container-appetence competence">
+                <img  src="ressources/ponctuel.svg">
+                <h1>ponctuel</h1>
+                <p>Ma ponctualité démontre mon engagement envers le travail d’équipe et le respect des engagements.</p>
             </div>
 
         </div>
@@ -86,11 +100,9 @@
     <div class="competence">
         <h1>Mes Compétence</h1>
 
-        <div id="container">
+        <div class="container">
 
-            <div>
 
-            </div>
 
         </div>
     </div>
@@ -102,14 +114,16 @@
 
 <div class="contact">
     <h1>N’hésite pas à me contacter</h1>
-    <div class="contactBlock">
-        <div id="contactHeader">
-            <label for="name"></label><input id="name" name="name" placeholder="Nom">
-            <label for="email"></label><input id="email" name="email" placeholder="e-mail">
+    <form action="https://formspree.io/f/xzbnewpj" method="POST">
+        <div class="contactBlock">
+            <div class="contactHeader">
+                <label for="name"></label><input id="name" name="name" placeholder="Nom">
+                <label for="email"></label><input id="email" name="email" placeholder="e-mail">
+            </div>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <button id="btenvoyer" type="submit" >Envoyer</button>
         </div>
-        <textarea id="message" name="message" placeholder="Message"></textarea>
-        <input id="btenvoyer" type="submit" value="Envoyer">
-    </div>
+    </form>
 </div>
 
 <div class="footer">
