@@ -295,7 +295,7 @@ nav .navbar .menu{
 
 /* ###################################################Version Téléphone################################## */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .menu-toggle {
         display: block;
     }
