@@ -20,7 +20,15 @@
 .projet-left .image img, .projet-right .image img{
     max-width: 500px;
     box-shadow: 0px 4px 28px 7px #b6b6b6;
+    transition: transform .3s ease;
+
 }
+
+.projet-left .image img:hover, .projet-right .image img:hover{
+    transform: scale(1.03);
+}
+
+
 
 .projet-left .container-text{
     margin-left: 60px;
