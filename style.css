@@ -245,7 +245,7 @@ nav .navbar .menu{
 
 /* ###################################################Version Tablette################################## */
 
-@media (max-width: 1200px) {
+@media (max-width: 12000px) {
 
     nav .navbar .logo a, nav .navbar .menu li a {
         font-size: 14px;
@@ -295,7 +295,7 @@ nav .navbar .menu{
 
 /* ###################################################Version Téléphone################################## */
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     .menu-toggle {
         display: block;
     }
