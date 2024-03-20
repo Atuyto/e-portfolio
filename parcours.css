@@ -71,7 +71,9 @@
     flex-direction: column;
     background-color: #454545;
     width: 100%;
-    height: 700px;
+    height: fit-content;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 .appetence .container-appetence{
@@ -101,7 +103,6 @@
     display: flex;
     flex-direction: column;
     width: 25%;
-    height: fit-content;
     justify-content: space-between;
     gap: 2rem;
     margin: auto;
@@ -120,13 +121,15 @@
 
 
 
+
+
 .competence{
     margin-top: 50px;
     margin-bottom: 7em;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: fit-content;
 }
 
 .competence .container-competence h2, .competence .container-software h2{
@@ -193,7 +196,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 80%;
-    align-items: center;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5em;
@@ -205,8 +208,102 @@
 
 }
 
+
 .container-software .software{
     width: 25%;
 }
 
+@media (max-width: 1200px) {
+    .main .container img{
+        max-width: 100%;
+        height: auto;
+    }
+}
 
+
+
+@media (max-width: 900px) {
+    .main h1{
+        font-size: 32px;
+    }
+    .main .container h1{
+        font-size: 18px;
+    }
+    .main .container p{
+        font-size: 14px;
+    }
+
+    .main .appetence .container-appetence .competence{
+        gap: 0.05em;
+    }
+
+    .main .appetence img{
+        width: 45%;
+    }
+    .main .appetence .container-appetence .competence  h1{
+        font-size: 20px;
+    }
+    .main .appetence .container-appetence .competence  p{
+        font-size: 16px;
+    }
+
+    #progress-container{
+        grid-template-columns: repeat(2,3fr);
+    }
+
+    .software img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main .container img{
+        max-width: 100%;
+        height: auto;
+    }
+    .main h1{
+        font-size: 18px;
+    }
+    .main .container h1{
+        font-size: 16px;
+    }
+    .main .container p{
+        font-size: 12px;
+    }
+
+    .main .appetence .container-appetence{
+        display: grid;
+        grid-template-columns: repeat(1, 3fr) ;
+        gap: 0.5em;
+    }
+
+    .main .appetence img{
+        width: 45%;
+    }
+    .main .appetence .container-appetence .competence{
+        width: 70%;
+    }
+    .main .appetence .container-appetence .competence  h1{
+        font-size: 18px;
+    }
+    .main .appetence .container-appetence .competence  p{
+        font-size: 12px;
+    }
+
+    #progress-container{
+        grid-template-columns: repeat(1,6fr);
+    }
+
+    .container-software #main{
+        display: grid;
+        grid-template-columns: repeat(1,3fr);
+    }
+
+    .container-software .software{
+        width: 100%;
+    }
+
+    .container-software .software img{
+        width: 40%;
+    }
+}
