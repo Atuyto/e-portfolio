@@ -107,7 +107,7 @@ nav .navbar .menu{
 
 
 .contact {
-    margin-top: 10em;
+    margin-top: 50em;
     display: flex;
     width: 100%;
     height: 550px;
@@ -295,7 +295,7 @@ nav .navbar .menu{
 
 /* ###################################################Version Téléphone################################## */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 400px) {
     .menu-toggle {
         display: block;
     }
