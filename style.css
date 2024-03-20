@@ -314,7 +314,7 @@ nav .navbar .menu{
         width: 100%;
         z-index: 1;
         padding: 0;
-        animation: myAnim 2s ease 0s 1 normal forwards;
+        animation: myAnim .5s ease 0s 1 normal forwards;
     }
 
     nav .navbar .menu.hide {
