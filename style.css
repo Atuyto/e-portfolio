@@ -138,6 +138,11 @@ footer #right #phone, #mail{
     gap: 1em;
 }
 
+footer #right #phone a{
+    color: white;
+    text-decoration: none;
+}
+
 footer #right{
     display: flex;
     margin-left: auto;
