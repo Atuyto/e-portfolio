@@ -105,8 +105,78 @@ nav .navbar .menu{
 }
 
 
-.footer{
+footer{
+    margin-top: 10em;
+    display: flex;
+    width: 100%;
     background-color: #353535;
+    color: white;
+    align-items: center;
+    font-family: "Luckiest Guy", serif;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+footer #left{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+footer #left img{
+    width: 3em;
+}
+
+footer #left, #right{
+    font-family: "imprima", sans-serif;
+}
+
+footer #right #phone, #mail{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+footer #right{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    max-width: 50%;
+    width: fit-content;
+}
+
+footer #left #images{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2em;
+
+}
+footer #right img{
+    width: 1.5em;
+}
+
+footer #right #mail-button button{
+    width: 100%;
+    height: 2.5em;
+    background-color: #FBA14C;
+    border-radius: 1em;
+    border: none;
+    color: white;
+    font-family: "imprima", sans-serif;
+    box-shadow: 1px 16px 17px 2px rgba(0,0,0,0.25) ;
+}
+
+
+
+
+footer #separation{
+    height: 8em;
+    background-color: white;
+    width: .5em;
+    border-radius: 5px;
 }
 
 
@@ -169,6 +239,13 @@ nav .navbar .menu{
         flex-direction: column;
     }
 
+    footer h1{
+        font-size: 22px;
+    }
+    footer h3{
+        font-size: 18px;
+    }
+
 
 }
 
@@ -197,7 +274,7 @@ nav .navbar .menu{
     }
 
     nav .navbar .menu.hide {
-        animation: myAnim 2s ease 0s 1 reverse forwards;
+        animation: myAnim .5s ease 0s 1 reverse forwards;
     }
 
     .main .presentation h1{
@@ -207,7 +284,33 @@ nav .navbar .menu{
         font-size: 16px;
     }
 
+    footer h1{
+        font-size: 18px;
+    }
+    footer h3{
+        font-size: 14px;
+    }
 
+
+    footer #left img{
+       width: 2em;
+    }
+    footer #right img{
+        width: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    footer{
+        flex-direction: column;
+    }
+
+    footer #separation{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        width: 80%;
+        height: .5em;
+    }
 }
 
 
