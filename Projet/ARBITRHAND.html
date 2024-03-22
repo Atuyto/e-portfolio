@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARBITRHAND</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+    <link rel="stylesheet" href="../projet_all.css">
+    <title>Hannecart-Alexandre</title>
+    <script src="../Controler.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- navigation bar -->
+<nav>
+    <div class="navbar">
+        <div class="logo"><a href="../index.html">Hannecart Alexandre</a></div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+        <ul class="menu">
+            <li class="nav-item ">
+                <a href ="../index.html" >ACCUEIL</a>
+            </li>
+            <li class="nav-item active">
+                <a href="../projet.html">PROJETS</a>
+            </li>
+            <li class="nav-item">
+                <a href="../parcours.html">QUI SUIS-JE ?</a>
+            </li>
+            <li class="nav-item">
+                <a href="../contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="main">
+    <h1>ARBITRHAND</h1>
+    <p id="projet">
+        Projet personnel
+    </p>
+
+    <p id="intro">
+        ARBITRHAND est un projet personnel que j'ai entrepris en collaboration  avec l'un de mes amis. Notre objectif était de concevoir une application  mobile destinée à faciliter la gestion des arbitrages de handball.  Cette initiative a été motivée par notre passion commune pour le sport  ainsi que par le désir de répondre à un besoin concret dans la  communauté des arbitres et des amateurs de handball. Tout au long de ce  projet, nous avons mis l'accent sur l'efficacité et la convivialité de  l'application, cherchant à fournir une solution pratique et intuitive  pour les arbitres, tout en offrant une expérience améliorée pour les  utilisateurs.    </p>
+
+    <div class="projet-left">
+        <img src="../ressources/arbitrhand/preview.png">
+        <p>
+            Notre objectif principal était d'offrir une personnalisation complète de  la configuration des matchs à travers l'application. Grâce à ce projet,  j'ai pu réaliser un travail pour un client dans des conditions  optimales. Cette expérience m'a permis de développer mes compétences en  front-end, en relevant de nombreux défis, notamment celui de l'affichage  dynamique des pénalités. De plus, j'ai acquis une compréhension  approfondie de l'architecture MVC (Modèle-Vue-Contrôleur), qui a été  cruciale pour le développement de l'application. Pour garantir des mises  à jour constantes et éviter toute régression de l'application, j'ai  intégré des tests JUnit dans le processus de développement, assurant  ainsi la qualité et la fiabilité du produit final.        </p>
+    </div>
+
+    <div class="projet-right">
+
+        <p>
+            Cette application a été entièrement développée en Java. Pour implémenter  les différentes fonctionnalités, j'ai utilisé plusieurs API, notamment  Room Database, car l'application propose un historique des matchs  (stocké localement sur le téléphone pour le moment) pour gérer les  litiges.        </p>
+        <img src="../ressources/java.png">
+    </div>
+
+    <div class="scrollable">
+        <img src="../ressources/arbitrhand/home.png">
+        <img src="../ressources/arbitrhand/login.png">
+        <img src="../ressources/arbitrhand/home.png">
+        <div id="imagesHorizon">
+            <img src="../ressources/arbitrhand/horizontal.png">
+            <img src="../ressources/arbitrhand/horizontal2.png">
+        </div>
+
+    </div>
+
+    <a href="https://antoine-carrere.fr/">Design réalisé par Antoine Carrere</a>
+
+</div>
+
+
+<footer>
+    <div id="left">
+        <h1>Hannecart Alexandre</h1>
+        <div id="images">
+            <a href="https://github.com/Atuyto"><img src="../ressources/logo_github.svg"></a>
+            <a href="https://www.linkedin.com/in/alexandre-hannecart-8a8491238/" ><img src="../ressources/logo-linkedin.svg"></a>
+        </div>
+    </div>
+
+    <div id="separation"></div>
+
+    <div id="right">
+        <div id="phone">
+            <img src="../ressources/logo_phone.svg">
+            <a href="tel:+33610585548"><h3>06 10 58 55 48</h3></a>
+        </div>
+        <div id="mail">
+            <img src="../ressources/logo_mail.svg">
+            <h3>Alexandresoune@gmail.com</h3>
+        </div>
+        <a id="mail-button" href="mailto:alexandresoune@gmail.com"><button>Envoyer un mail</button></a>
+    </div>
+
+</footer>
+
+</body>
+</html>

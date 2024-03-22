@@ -9,6 +9,8 @@
 .main h1{
     margin-right: auto;
     margin-left: auto;
+    color: #353535;
+    font-size: 32px;
     font-family: "Luckiest Guy", serif;
 }
 
@@ -47,7 +49,7 @@
     margin-right: auto;
     margin-left: auto;
     height: fit-content;
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
     gap: 1em;
 
@@ -56,11 +58,56 @@
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
 }
 
-a {
+.scrollable #imagesHorizon{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.main a {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 2em;
     color: #808CF9;
+}
+
+
+@media (max-width: 900px) {
+
+    .main{
+        font-size: 16px;
+    }
+
+    .main h1{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main{
+        font-size: 10px;
+    }
+    .main h1{
+        font-size: 18px;
+    }
+
+    .main .projet-left{
+        flex-direction: column;
+    }
+    .main .projet-right img , .main .projet-left img{
+        width: 50%;
+    }
+
+    .main .projet-right{
+        flex-direction: column-reverse;
+    }
+
+    .scrollable{
+        width: 65%;
+    }
+    .scrollable img{
+        width: 20em;
+    }
 }
 
