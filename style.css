@@ -21,6 +21,7 @@ body{
 
 
 nav{
+    white-space: nowrap;
     width: 100%;
     height: 70px;
     background-color: var(--main-bg-color);

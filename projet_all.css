@@ -1,0 +1,66 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+    font-family: "imprima", sans-serif;
+    font-size: 22px;
+}
+
+.main h1{
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Luckiest Guy", serif;
+}
+
+.main #projet{
+    color: #808CF9;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main #intro{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main .projet-left, .main .projet-right{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .projet-left img {
+    width: 15em;
+}
+
+.scrollable {
+    display: flex;
+    margin-top: 3em;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: fit-content;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 1em;
+
+}
+.scrollable img{
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
+}
+
+a {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    color: #808CF9;
+}
+
