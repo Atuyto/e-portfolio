@@ -6,7 +6,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="contact.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
-    <script src="Controler.js"></script>
+    <script defer src="Controler.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -31,6 +31,32 @@
             </ul>
         </div>
     </nav>
+
+
+    <div id="contact">
+
+        <form id="formulaire-contact" action="https://formspree.io/f/mbjnaqey" method="post">
+
+            <label>
+                Nom et prénom:
+                <input type="text" name="nom">
+            </label>
+
+            <label>
+                E-mail:
+                <input type="email" name="email">
+            </label>
+
+            <label>
+                Message:
+                <textarea type="text" name="message"></textarea>
+            </label>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+    </div>
 
     <footer>
         <div id="left">

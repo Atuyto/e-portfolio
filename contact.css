@@ -79,6 +79,76 @@
 
 }
 
+#contact {
+    width: 80%;
+    background-color: #454545;
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding: 4em;
+    height: fit-content;
+}
+
+#contact form label{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: white;
+    width: 100%;
+    font-family: "imprima", sans-serif;
+}
+
+#contact form label input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 3em;
+    padding-left: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "imprima", sans-serif;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+}
+
+#contact form label textarea{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    max-height: 45%;
+    height: 15em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "imprima", sans-serif;
+    padding: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+}
+
+#contact button{
+    display: flex;
+    margin-left: auto;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBA14C;
+    color: white;
+    font-family: "imprima", sans-serif;
+    border: none;
+    border-radius: 6px;
+    height: 2em;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+}
+
+
 @media screen and (max-width: 1200px) {
 
     .container-mail .container-head input{
@@ -125,5 +195,16 @@
     .container-mail button{
         margin-left: 50px;
         width: 70px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #contact form{
+        width: 60%;
+    }
+
+    #contact button{
+        width: 100%;
     }
 }

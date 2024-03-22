@@ -28,9 +28,6 @@ progressBars.forEach(bar => {
 });
 
 
-
-
-
 function toggleMenu() {
     let navbarMenu = document.querySelector('.navbar .menu');
 
