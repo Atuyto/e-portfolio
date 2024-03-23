@@ -175,7 +175,16 @@ footer #right #mail-button button{
     box-shadow: 1px 16px 17px 2px rgba(0,0,0,0.25) ;
 }
 
-
+.error {
+    position: absolute;
+    width: fit-content;
+    font-family: "Luckiest Guy", serif;
+    color: #454545;
+    font-size: 500%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 footer #separation{
