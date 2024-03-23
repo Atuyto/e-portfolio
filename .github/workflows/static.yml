@@ -38,6 +38,8 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: Copy 404.html
+        run: cp 404.html $GITHUB_WORKSPACE
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
